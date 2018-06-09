@@ -9,11 +9,12 @@ namespace TreeListDrawImage
 {
     public partial class Form1 : Form
     {
+        DrawHelper helper;
         public Form1()
         {
             InitializeComponent();
             AddNodes();
-            DrawHelper helper = new DrawHelper();
+            helper = new DrawHelper();
             helper.RegisterTreeList(treeList1, TreeListDrawImage.Properties.Resources.Asphalt_World___16x16);
             helper.ImageClick += helper_ImageClick;
         }
@@ -29,6 +30,11 @@ namespace TreeListDrawImage
             {
                 treeList1.AppendNode(new object[] { string.Format("Node {0}", i) }, -1);
             }
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e) {
+            helper.ImageClick -= helper_ImageClick;
+            helper.Unregister();
+            base.OnFormClosing(e);
         }
     }
 }
