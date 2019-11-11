@@ -1,4 +1,6 @@
-﻿Namespace TreeListDrawImage
+﻿Imports Microsoft.VisualBasic
+Imports System
+Namespace TreeListDrawImage
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
