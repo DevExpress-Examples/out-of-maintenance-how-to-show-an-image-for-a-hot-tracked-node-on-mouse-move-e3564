@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text
@@ -20,18 +19,10 @@ Namespace TreeListDrawImage
 
 		Public Sub RegisterTreeList(ByVal treeList As TreeList, ByVal image As Image)
 			RegisterTreeList(treeList)
-			privateImage = image
+			Me.Image = image
 		End Sub
 
-		Private privateImage As Image
 		Public Property Image() As Image
-			Get
-				Return privateImage
-			End Get
-			Set(ByVal value As Image)
-				privateImage = value
-			End Set
-		End Property
 
 		Public Event ImageClick As EventHandler
 

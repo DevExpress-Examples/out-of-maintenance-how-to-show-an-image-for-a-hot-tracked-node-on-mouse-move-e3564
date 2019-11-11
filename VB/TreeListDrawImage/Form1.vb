@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Windows.Forms
@@ -9,6 +8,7 @@ Imports DevExpress.XtraTreeList.Nodes
 Namespace TreeListDrawImage
 	Partial Public Class Form1
 		Inherits Form
+
 		Public Sub New()
 			InitializeComponent()
 			AddNodes()
