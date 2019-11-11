@@ -25,7 +25,11 @@ private void treeList1_Click(object sender, EventArgs e){
 <p> </p>
 
 ```vb
-Private Sub treeList1_Click(sender As Object, e As EventArgs)<newline/>	If treeList1.CalcHitInfo(treeList1.PointToClient(MousePosition)).HitInfoType = DevExpress.XtraTreeList.HitInfoType.RowIndicator Then<newline/>		MessageBox.Show("Click!")<newline/>	End If<newline/>End Sub<newline/>
+Private Sub treeList1_Click(sender As Object, e As EventArgs)
+        If treeList1.CalcHitInfo(treeList1.PointToClient(MousePosition)).HitInfoType = DevExpress.XtraTreeList.HitInfoType.RowIndicator Then	
+            MessageBox.Show("Click!")
+        End If
+End Sub
 ```
 
 <p> </p>
