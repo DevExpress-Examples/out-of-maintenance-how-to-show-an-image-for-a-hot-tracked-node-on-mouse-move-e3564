@@ -16,7 +16,10 @@ treeList1.CalcHitInfo(treeList1.PointToClient(MousePosition)).Node
 <p> </p><p>If you wish to execute any action if a user clicked on an image, then handle the TreeList.Click event. To verify whether or not the mouse position is over a node indicator, utilize the following code:</p>
 
 ```cs
-private void treeList1_Click(object sender, EventArgs e)<newline/>        {<newline/>            if (treeList1.CalcHitInfo(treeList1.PointToClient(MousePosition)).HitInfoType == DevExpress.XtraTreeList.HitInfoType.RowIndicator)<newline/>                MessageBox.Show("Click!");<newline/>        }
+private void treeList1_Click(object sender, EventArgs e){
+    if (treeList1.CalcHitInfo(treeList1.PointToClient(MousePosition)).HitInfoType == DevExpress.XtraTreeList.HitInfoType.RowIndicator)
+        MessageBox.Show("Click!");
+}
 ```
 
 <p> </p>
