@@ -13,7 +13,7 @@ Namespace TreeListDrawImage
 			InitializeComponent()
 			AddNodes()
 			Dim helper As New DrawHelper()
-			helper.RegisterTreeList(treeList1, My.Resources.Asphalt_World___16x16)
+			helper.RegisterTreeList(treeList1, Resources.Asphalt_World___16x16)
 			AddHandler helper.ImageClick, AddressOf helper_ImageClick
 		End Sub
 
